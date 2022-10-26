@@ -1,0 +1,38 @@
+﻿@model modCLima.Models.Clima
+<script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $('.dataAtual').mask("99/99/9999", { placeholder: 'DD/MM/YYYY' });
+
+</script>
+
+<div class="panel-body">
+    <div class="city">Climas para as Cidades do Estado SE/BR</div>
+    <div class="date" id="dataAtual">@Model.HoraAtual</div>
+    <div class="container-img">
+        @{
+            if (Model.HoraAtual.Hour >= 5 && Model.HoraAtual.Hour <= 18)
+            {
+                <img src="~/Content/icons/01d.png" />
+
+            }
+            if (Model.HoraAtual.Hour >= 19 || Model.HoraAtual.Hour <= 5)
+            {
+                <img src="~/Content/icons/01n.png" />
+
+            }
+        }
+
+    </div>
+    <div class="container-temp">
+        <p>
+            @((int)Model.Temp.temp_min)
+        </p>
+        <span>°C</span>
+    </div>
+    <div class="weather"></div>
+    <div class="hi-low">
+    Min: @((int)Model.Temp.temp_min) °C /
+    Max: @((int)Model.Temp.temp_max) °C</div>
+
+</div>

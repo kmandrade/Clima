@@ -1,0 +1,65 @@
+﻿@model modCLima.Models.Clima
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/Style.css" />
+    <title>Clima e Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card text-center shadow-lg" style="width: 36rem;">
+
+            <div class="card-header bg-white text-dark font-weight-bold">Clima e Temperatura </div>
+
+            <div class="card-body">
+                @if (Model == null)
+                {
+
+                    Html.RenderPartial("_ClimaPadrao");
+
+                }
+                else
+                {
+                    Html.RenderPartial("_ObterTempClima");
+
+                }
+
+            </div>
+            <div class="card-footer">
+                @using (Ajax.BeginForm("ObterClima", "Clima", new AjaxOptions()
+                {
+                    HttpMethod = "GET",
+                    UpdateTargetId = "principal-container",
+
+                    InsertionMode = InsertionMode.Replace
+                }))
+                {
+                    <div class="panel-body">
+                        <div class="input-block">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Digite o nome da cidade" })
+                            @Html.ValidationMessageFor(m => m.Name)
+                            <button type="submit" class="btn btn-secondary" style="margin:5px">Pesquisar</button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="~/Scripts/scriptsClima.js"></script>
+    <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\Domain.runtimeconfig.json
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\bin\Debug\net5.0\Domain.runtimeconfig.dev.json
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.genruntimeconfig.cache
+C:\Users\kelvin.andrade\source\repos\Clima\API\ApiClima\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
