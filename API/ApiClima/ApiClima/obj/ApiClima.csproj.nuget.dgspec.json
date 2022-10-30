@@ -26,9 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://bibliotecas.banese.com.br/repository/nuget-all": {},
-          "https://ibc020.banese.com.br/SEAC/_packaging/SeacFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -51,6 +49,10 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.0, )"
             },
@@ -121,9 +123,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://bibliotecas.banese.com.br/repository/nuget-all": {},
-          "https://ibc020.banese.com.br/SEAC/_packaging/SeacFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {

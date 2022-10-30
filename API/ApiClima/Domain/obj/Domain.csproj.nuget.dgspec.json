@@ -26,9 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://bibliotecas.banese.com.br/repository/nuget-all": {},
-          "https://ibc020.banese.com.br/SEAC/_packaging/SeacFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {

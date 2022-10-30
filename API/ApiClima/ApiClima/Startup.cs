@@ -1,4 +1,5 @@
 using ApiClima.Helper;
+using ApiClima.Profiles;
 using Domain.ClimaContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,7 +37,8 @@ namespace ApiClima
             services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
-          
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddDbContext<MyContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Connectionstring")));
         }

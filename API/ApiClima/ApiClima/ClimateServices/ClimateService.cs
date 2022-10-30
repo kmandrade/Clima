@@ -14,11 +14,12 @@ namespace ApiClima.ClimateServices
     public class ClimateService : IClimateService
     {
         private readonly IClimateRepository _climateRepository;
+        private readonly IMapper _mapper;
 
-
-        public ClimateService(IClimateRepository climateRepository)
+        public ClimateService(IClimateRepository climateRepository, IMapper mapper)
         {
             _climateRepository = climateRepository;
+            _mapper = mapper;
         }
 
 
@@ -30,16 +31,7 @@ namespace ApiClima.ClimateServices
                 var resultClimateCache = await VerificaCacheClimaPorNomeCidade(nmCidade);
                 if (resultClimateCache != null)
                 {
-                    var dtoClimate = new DTOClimate
-                    {
-                        Name = resultClimateCache.NomeCidade,
-                        Temp = new DTOtemp
-                        {
-                            temp_min = resultClimateCache.Temp.ToList().FirstOrDefault().temp_min,
-                            temp_max = resultClimateCache.Temp.ToList().FirstOrDefault().temp_max,
-                            DateTime = resultClimateCache.DateTime
-                        }
-                    };
+                    var dtoClimate = _mapper.Map<DTOClimate>(resultClimateCache);
                     return dtoClimate;
                 }
                 var resultApiClima = await GetClimaApiExterna(nmCidade);
