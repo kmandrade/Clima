@@ -10,5 +10,6 @@ Ao solicitar os dados para uma cidade, deve-ser verificar se existe dados climá
 O código deve usar .NET CORE C#;
 Implementar operações no banco de dados utilizando um ORM ou Micro ORM ORM's/Micro ORM's permitidos: Entity Framework Core;
 Utilizar Conceitos SOLID;
+Testes Unitários;
 Boas práticas da Linguagem/Framework;
 
