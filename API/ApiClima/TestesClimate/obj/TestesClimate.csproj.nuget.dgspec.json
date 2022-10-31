@@ -4,14 +4,111 @@
     "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj": {
+    "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\ApiClima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj",
-        "projectName": "TestesClimate",
-        "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj",
+        "projectUniqueName": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\ApiClima.csproj",
+        "projectName": "ApiClima",
+        "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\ApiClima.csproj",
         "packagesPath": "C:\\Users\\kelvin.andrade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\obj\\",
+        "outputPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kelvin.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\kelvin.andrade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +141,95 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj",
+        "projectName": "TestesClimate",
+        "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\TestesClimate.csproj",
+        "packagesPath": "C:\\Users\\kelvin.andrade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\TestesClimate\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kelvin.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\ApiClima.csproj": {
+                "projectPath": "C:\\Users\\kelvin.andrade\\source\\repos\\Clima\\API\\ApiClima\\ApiClima\\ApiClima.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
